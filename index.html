@@ -55,7 +55,7 @@
   display: inline-block;
   width: 100%;
   background-color: #242f3f;
-  animation: loader-inner 30s infinite ease-in;
+  animation: loader-inner 45s infinite ease-in;
 }
 @keyframes loader {
   0% { transform: rotate(0deg);}
@@ -82,9 +82,7 @@
 </head>
 
 <body>
-    <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-    </div>
+    
 
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -130,7 +128,9 @@
 
   <!--Carousel Wrapper-->
   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-      
+      <div class="loader-wrapper">
+          <span class="loader"><span class="loader-inner"></span></span>
+      </div>      
 
     <!--Indicators-->
     <ol class="carousel-indicators">
