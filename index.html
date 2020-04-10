@@ -31,46 +31,7 @@
     .navbar {
     box-shadow: none;
     }
-    .loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  animation: loader 30s infinite ease;
-}
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #242f3f;
-  animation: loader-inner 30s infinite ease-in;
-}
-@keyframes loader {
-  0% { transform: rotate(0deg);}
-  25% { transform: rotate(180deg);}
-  50% { transform: rotate(180deg);}
-  75% { transform: rotate(360deg);}
-  100% { transform: rotate(360deg);}
-}
-@keyframes loader-inner {
-  0% { height: 0%;}
-  25% { height: 0%;}
-  50% { height: 100%;}
-  75% { height: 100%;}
-  100% { height: 0%;}
-}
+  
 
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
@@ -146,11 +107,9 @@
 
     <!--Slides-->
     <div class="carousel-inner" role="listbox">
-        <div class="loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>  
+         
       <!--First slide-->
-      <div class="carousel-item active">
+      <div class="carousel-item">
         <div class="view">
 
           <!--Video source-->
@@ -187,15 +146,17 @@
       </div>
       <!--/Second slide-->
 
+      <div class="carousel-item">
+          <img class="d-block h-100 w-100" src="00_home_slides/9.jpg">
+          <div class="carousel-caption">              
+              <p>&copy;shanshareef</p>
+            </div>
+        </div>
+
      
 
       <!--Picture slide-->
-      <div class="carousel-item">
-        <img class="d-block h-100 w-100" src="00_home_slides/3.jpg">
-        <div class="carousel-caption">              
-            <p>&copy;shanshareef</p>
-          </div>
-      </div>
+      
       <div class="carousel-item">
         <img class="d-block h-100 w-100" src="00_home_slides/4.jpg">
         <div class="carousel-caption">              
@@ -231,7 +192,7 @@
 
       
        <!--Fourth slide-->
-       <div class="carousel-item">
+       <div class="carousel-item active">
           <div class="view">
   
             <!--Video source-->
@@ -249,12 +210,12 @@
         <!--/Fourth slide-->
 
 
-      <div class="carousel-item">
-        <img class="d-block h-100 w-100" src="00_home_slides/9.jpg">
-        <div class="carousel-caption">              
-            <p>&copy;shanshareef</p>
+        <div class="carousel-item">
+            <img class="d-block h-100 w-100" src="00_home_slides/3.jpg">
+            <div class="carousel-caption">              
+                <p>&copy;shanshareef</p>
+              </div>
           </div>
-      </div>
       <!--/Picture slide-->
 
     </div>
